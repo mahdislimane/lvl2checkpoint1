@@ -3,9 +3,7 @@ const pets = [
   { name: "Angel", type: "cat", bornOn: 2015 },
   { name: "Jasper", type: "dog", bornOn: 2016 }
 ];
-const getAge = pet => {
-  return new Date().getFullYear() - pet.bornOn;
-};
+const getAge = pet => new Date().getFullYear() - pet.bornOn;
 
 const petsWithAge = [];
 pets.forEach(pets => {
