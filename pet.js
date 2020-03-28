@@ -26,8 +26,6 @@ console.log(dogs);
 let jasper;
 pets.forEach(pets => {
   let pet = pets;
-  if (pet.name === "Jasper") {
-    jasper = pet;
-  }
+   pet.name === "Jasper" && (jasper = pet);
 });
 console.log(`Jasper is ${jasper.age} years old`);
